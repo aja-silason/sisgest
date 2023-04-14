@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Tela - Sistema de UNO</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">Logotipo_Aqui</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Denunciar</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Não Definido!</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Não Definido!</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Não Definido!</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Não Definido!</a>
+                </div>
+				<div class="ultimo-saida"><a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">&harr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sair</a></div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">			  
+							<button class="btn" id="sidebarToggle"><img src="img/menu-barras-3pq.png" alt="icon do menu"></button>
+                        <div class="navbar-collapse">
+                            <aside class="navbar-nav ms-auto mt-2 mt-lg-0">
+								<p>USERNAME</p>
+								<div><img src="img/avatar%20(2).png" alt="icon de usuario sistema __"></div>
+                            </aside>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">Exemplo de Formulário </h1>
+                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+				  <form role="form" id="cadastro" class="cadas_posicao">
+					<aside class="form-group paralelo col-sm-4">
+						<label for="nome@usuario">Nome Completo</label>
+						<select id="nome@usuario" class="form-control">
+						   <option selected>#O_NomedoUsuario</option>
+						   <option>Anónimo</option>
+					   </select>
+					</aside>
+					<div class="form-group paralelo col-sm-4">
+						<label for="acusado">Nome do Acusado</label>
+						<input type="txt" class="form-control" id="acusado" placeholder="Digite o nome da Empresa/Organização">
+					</div>
+					<aside class="form-group paralelo col-sm-2">
+						<label for="data-crime">Data de Acontecimeto</label>
+						<input type="datetime-local" class="form-control" id="data-crime" placeholder="DD-MM-AAA">
+					</aside>
+					<div class="form-group paralelo col-sm-5">
+						<label for="onde">Local Digital</label>
+						<input type="text" class="form-control" id="onde" placeholder="Digite o nome da plataforma/rede social/aplicação/E-commerce">
+					</div>
+					<div class="form-group paralelo col-sm-3">
+					   <label for="inputCrime">Tipo de Crime</label>
+					   <select id="inputCrime" class="form-control">
+						   <option selected>Selecione um:</option>
+						   <option>...</option>
+						   <option>...</option>
+						   <option>...</option>
+					   </select>
+					</div>
+					<div class="form-group paralelo col-sm-2">
+						<label>Tipo de Denúncia</label>&nbsp;
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn  btn-sm">
+								<input type="radio" name="options" id="option1" > Ativa
+							</label>
+							<label class="btn btn-sm">
+								<input type="radio" name="options" id="option2"> Passiva
+							</label>
+						</div>
+					</div>
+					<section class="row">
+					  <div class="form-group paralelo col-sm-6">
+                        <div class="form-group">
+                            <label for="decricao">Mais Descrições</label>
+                            <textarea name="decricao" id="decricao" class="form-control" rows="6" cols="15" required="required"
+                                placeholder="Descreva de forma resumida detalhes que não foram preenchidos nos requesitos anteriores. (Nós estamos ao seu dispor e solucionaremos com a maior execelência a tua inquetação)"></textarea>
+                        </div>
+                    </div>
+					
+				  </section>  
+					
+					<div class="col-sm-12 center">
+						<button type="submit" class="btn btn-primary">Enviar</button>&nbsp;
+						<button type="reset" class="btn btn-secondary">Cancelar</button>  
+					</div>
+				  </form>
+              <hr>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
