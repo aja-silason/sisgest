@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sistema de Gestão - Secretaria</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+
+        <link href="./css/alunos_novos.module.css" rel="stylesheet" />
+        
+        <link href="../css/forms.module.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">Logotipo_Aqui</div>
+                <div class="list-group list-group-flush menu">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="./index.html">Inicio
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Pagamentos
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="alunos_novos.html">Cadastrar Alunos</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="./confirmar_matriculas.html">Confirmar Matriculas</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Emissão de Documentos</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Confirmar Matriculas</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Transferência</a>
+
+                </div>
+				<div class="ultimo-saida"><a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">&harr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sair</a></div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">			  
+							<button class="btn" id="sidebarToggle"><img src="../img/menu-barras-3pq.png" alt="icon do menu"></button>
+                            
+                        <div class="navbar-collapse">
+                            
+                            <aside class="navbar-nav ms-auto mt-2 mt-lg-0">
+								<p>Sec.: Paulo Adão</p>
+								<div><img src="../img/avatar%20(2).png" alt="icon de usuario sistema __"></div>
+                            </aside>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container">
+                    
+                    <div class="block1">
+                        <p>Cadastrar a ficha do aluno</p>
+                    </div>
+                    <hr>
+                    <div class="block2">
+                        <form action="#">
+                            <div class="data">
+                                <div class="personal_data">
+                                    <h3>Dados Pessoais</h3>
+                                    <hr>
+
+                                    <label for="nome_aluno">Nome do aluno <span>*</span></label>
+                                    <input type="text"  id="nome_aluno" name="nome_aluno" placeholder="Nome do aluno"/>
+
+                                    <label for="nome_aluno">Cédula/Bilhete de Identidade<span>*</span></label>
+                                    <input type="text"  id="bi" name="bi" placeholder="Ex: 008975414LA044"/>
+
+
+                                    <label for="genero">Gênero<span>*</span></label>
+                                    <select name="genero" id="genero">
+                                        <option>---</option>
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                    </select>
+
+                                    <label for="est_civil">Estado civíl<span>*</span></label>
+                                    <select name="est_civil" id="est_civil">
+                                        <option>---</option>
+                                        <option>Solteiro/a</option>
+                                        <option>Casado/a</option>
+                                    </select>
+
+                                    <label for="nacionalidade">Nacionalidade<span>*</span></label>
+                                    <input type="text"  id="nacionalidade" name="nacionalidade" placeholder="Ex: Angolana"/>
+
+                                    <label for= "naturalidade">Natural de<span>*</span></label>
+                                    <input type="text"  id="naturalidade" name="naturalidade" placeholder="Ex: Luanda"/>
+                                                        
+                                    <label for="dataNasc">Data de Nascimento<span>*</span></label>
+                                    <input type="date"  id="dataNasc" name="dataNasc"/>
+
+
+                                </div>
+    
+                                <div class="academic_data">
+                                    <h3>Dados Academicos</h3>
+                                    <hr>
+                                    
+                                    <label for="ensino">Nível de Ensino <span>*</span></label>
+                                    <select name="ensino" id="ensino">
+                                        <option>---</option>
+                                        <option>Fundamental</option>
+                                        <option>Primário</option>
+                                        <option>Secundário</option>
+                                        <option>Médio</option>
+                                    </select>
+
+                                    <label for="classe">Classe <span>*</span></label>
+                                    <select name="classe" id="classe">
+                                        <option>---</option>
+                                        <option>10ª</option>
+                                        <option>11ª</option>
+                                        <option>12ª</option>
+                                        <option>13ª</option>
+                                    </select>
+
+                                    <label for="curso">Curso <span>*</span></label>
+                                    <select name="curso" id="curso">
+                                        <option >---</option>
+                                        <option>Informática</option>
+                                        <option>Electrónica e Telecom.</option>
+                                        <option>Ciências Física e Biológica</option>
+                                        <option>Ciências Econômicas e Jurídicas</option>
+                                    </select>
+
+                                    <label for="turma">Turma <span>*</span></label>
+                                    <select name="turma" id="turma">
+                                        <option>---</option>
+                                        <option>B10</option>
+                                        <option>B11</option>
+                                        <option>B12</option>
+                                        <option>B13</option>
+                                    </select>
+
+                                    <label for="turno">Turno <span>*</span></label>
+                                    <select name="turno" id="turno">
+                                        <option>---</option>
+                                        <option>Manhã</option>
+                                        <option>Tarde</option>
+                                        <option>Noite</option>
+                                    </select>
+
+                                    <label for="instAntiga">Instituição Antiga <span>*</span></label>
+                                    <input type="text"  id="instAntiga" name="instAntiga" placeholder="Nome do antigo colegio/escola"/>
+
+                                </div>
+                                
+                                <div class="extra_data">
+                                    <h3>Dados Extracurricular</h3>
+                                    <hr>
+
+                                    <label for="bolseiro">Bolseiro </label>
+                                    <select name="bolseiro" id="bolseiro">
+                                        <option>---</option>
+                                        <option>Sim</option>
+                                        <option>Não</option>
+                                    </select>
+
+                                    <label for="uniforme">Tipo de uniforme</label>
+                                    <select name="uniforme" id="uniforme">
+                                        <option>---</option>
+                                        <option>Completo</option>
+                                        <option>T-shirt</option>
+                                        <option>Blusa</option>
+                                        <option>Calção</option>
+                                        <option>Saia</option>
+                                        <option>Calça</option>
+                                        <option>Desporto</option>
+                                    </select>
+
+                                    <label for="transporte">Transporte</label>
+                                    <select name="transporte" id="transporte">
+                                        <option>---</option>
+                                        <option>Sim</option>
+                                        <option>Não</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="otherDatas">
+                                <h3>Pais</h3>
+                                <div class="parents">
+                                    <div class="father_data">
+                                        <h3>Dados do Pai</h3>
+                                        <hr>
+
+                                        <label for="nomepai">Nome do Pai <span>*</span></label>
+                                        <input type="text"  id="nomepai" name="nomepai" placeholder="Nome do Pai do estudante"/>
+        
+                                        <label for="nacionalidadepai">Nacionalidade</label>
+                                        <input type="text"  id="nacionalidadepai" name="nacionalidadepai" placeholder="Ex: Moxico"/>
+
+                                        <label for="naturalidadepai">Naturalidade</label>
+                                        <input type="text"  id="naturalidadepai" name="naturalidadepai" placeholder="Ex: Alto-Zambeze"/>
+
+                                    </div>
+                                    <div class="mother_data">
+                                        <h3>Dados da Mãe</h3>
+                                        <hr>
+
+                                        <label for="nomemae">Nome do Mãe <span>*</span></label>
+                                        <input type="text"  id="nomemae" name="nomemae" placeholder="Nome do Mãe do estudante"/>
+        
+                                        <label for="nacionalidademae">Nacionalidade</label>
+                                        <input type="text"  id="nacionalidademae" name="nacionalidademae" placeholder="Ex: Zâmbia"/>
+
+                                        <label for="naturalidademae">Naturalidade</label>
+                                        <input type="text"  id="naturalidademae" name="naturalidademae" placeholder="Ex: Chingola"/>
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            
+                            <div class="paymentDatas">
+                                <h3>Forma de Pagamento</h3>
+                                <div class="pay">
+                                    <div class="payment">
+                                        <div class="payment_data">
+                                            <h3>Importar arquivos scanneados</h3>
+                                            <hr>
+
+                                            <label for="fotografia">Fotografia tipo passe <span>*</span></label>
+                                            <input type="file"  id="fotografia" name="fotografia" require/>
+
+                                            <label for="certificado">Certificado/Declaração <span>*</span></label>
+                                            <input type="file"  id="certificado" name="certificado" require/>
+
+                                            <label for="recomendação">Carta de Recomendação</label>
+                                            <input type="file"  id="recomendação" name="recomendação" require/>
+
+                                            <label for="atMedico">Atestado Médico <span>*</span></label>
+                                            <input type="file"  id="atMedico" name="atMedico" require/>
+
+                                            <label for="cvacina">Cartão de Vacina <span>*</span></label>
+                                            <input type="file"  id="cvacina" name="cvacina" require/>
+                                           
+        
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="payment">
+                                        <div class="payment_data">
+                                            <h3>Dados de Pagamento</h3>
+                                            <hr>
+
+                                            <label for="transporte">Modo de Pagamento <span>*</span></label>
+                                            <select name="transporte" id="transporte">
+                                                <option>---</option>
+                                                <option>Cartão de crédito</option>
+                                                <option>Cache</option>
+                                                <option>Transferêcia</option>
+                                                <option>Depósito</option>
+
+                                            </select>
+    
+                                            <label for="valor">Valor pago <span>*</span></label>
+                                            <input type="number"  id="valor" name="valor" placeholder="Valor a creditar" require/>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            
+                            <div class="button">
+                                <button type="submit" class="btnReg">Cadastrar aluno</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+              <hr>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

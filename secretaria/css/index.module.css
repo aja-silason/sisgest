@@ -1,0 +1,124 @@
+:root{
+    /*Cores que serão usadas*/
+    --defaultColorLetters: #181818;
+    --linkColor: #f05006;
+    --bannerLetter: #f05006;
+    --defaultBannerBackColor: #ccc;
+}
+
+p{
+    color: var(--defaultColorLetters);
+}
+h1{
+    color: var(--defaultColorLetters);
+}
+
+.menu{
+    background-color: #181818;
+}
+.menu a{
+    /*cor por definir*/
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .block1, .block2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block1{
+    margin-top: 1em;
+    margin-bottom: -1em;
+}
+
+.blockCard{
+    display: flex;
+}
+
+.cards{
+    background-color: var(--defaultBannerBackColor);
+    padding: 1em 2em;
+    width: 15em;
+    height: 15em;
+    cursor: pointer;
+    margin: 1em;
+}
+
+.cards img{
+    width: 4em;
+    margin-bottom: .5em;
+}
+
+.cards span p{
+    font-weight: 500;
+    font-size: 14pt;
+}
+
+.cards a{
+    text-decoration: none;
+    color: var(--linkColor);
+    margin: 0;
+}
+.cards p{
+    text-indent: none;
+    text-align: initial;
+    font-size: 11pt;
+}
+
+.blockNumbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blockNumbers, p{
+    text-align: center;
+}
+
+.blockNumbers .chart, .doubleChart{
+    margin: 1em;
+    width: 15em;    
+}
+
+.chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12em;
+}
+.chart  h1{
+    margin: 0;
+    color: var(--bannerLetter);
+    font-weight: 600;
+    font-size: 48pt;
+}
+.chart p{
+    font-weight: 600;
+}
+
+.doubleChart{
+    display: grid;
+    gap: 2em;
+}
+
+.doubleChart div{
+    background-color: var(--defaultBannerBackColor);
+}
+
+.doubleChart div{
+    padding: 1em 0;
+}
+.doubleChart div span p{
+    margin: 0;
+    color: var(--bannerLetter);
+    font-weight: 600;
+}
+.doubleChart div p{
+    font-weight: 300;
+}

@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.block1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: -1em;
+}
+
+.container .block2{
+    display: flex;
+}
+
+
+
+.data div{
+    width: 20em;
+}
+
+.otherDatas .parents, .paymentDatas .pay{
+    display: flex;
+    gap: 1em;
+}
+.parents div, .pay div{
+    width: 30em;
+}
+
+
+h3{
+    font-size: 14pt;
+}
+
+.button .btnReg{
+    background-color: var(--yesButton);
+    border: none;
+    color: var(--textYesBtnColor);
+    width: 10em;
+    height: 2.5em;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.btnReg:hover{
+    background-color: var(--HyesButton);
+    color: var(--HtextYesBtnColor);
+}

@@ -1,0 +1,61 @@
+:root{
+
+    --defaultColorLetters: #181818;
+    --linkColor: #f05006;
+    --bannerLetter: #f05006;
+    --defaultBannerBackColor: #ccc;
+
+    --yesButton: #0d6efd;
+    --textYesBtnColor: #fff;
+    --noButton: #dc3545;
+    --textNoBtnColor: #080404;
+
+    --HyesButton: #1766dd;
+    --HtextYesBtnColor: #fff;
+    --HnoButton: #a32424;
+    --HtextNoBtnColor: #180d0d;
+
+    --alertMessage: #f05006;
+}
+
+form{
+    border: 1px solid var(--defaultBannerBackColor);
+    padding: 1em;
+    border-radius: .5em;
+}
+
+form .data{
+    display: flex;
+    margin-bottom: 1em;
+    gap: 1em;
+}
+
+label{
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+label span{
+    color: red;
+}
+
+input{
+    margin-bottom: .5em;
+    border: .1em solid var(--defaultBannerBackColor);
+    border-radius: .2em;
+    width: 100%;
+    height: 2em;
+    padding: .5em;
+}
+input[type=file]{
+    border: none;
+    height: auto;
+    font-size: 11pt;
+}
+
+select{
+    border: .1em solid var(--defaultBannerBackColor);
+    width: 100%;
+    height: 2em;
+    cursor: pointer;
+    margin-bottom: .5em;
+}
