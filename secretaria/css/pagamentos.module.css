@@ -1,0 +1,8 @@
+.blockPagementos{
+    display: flex;
+    gap: 2rem;
+}
+
+.blockPagementos form{
+    width: 20rem;
+}

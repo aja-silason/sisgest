@@ -1,0 +1,16 @@
+label{
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+p{
+    margin-bottom: .5em;
+}
+
+.block2 div{
+    margin-bottom: 1em;
+}
+.alunoimg{
+    width: 5em;
+    height: 5em;
+}

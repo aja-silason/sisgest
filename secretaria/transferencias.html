@@ -10,7 +10,11 @@
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
-        <link href="./css/index.module.css" rel="stylesheet" />
+
+        <link href="./css/alunos_novos.module.css" rel="stylesheet" />
+        
+        <link href="../css/forms.module.css" rel="stylesheet" />
+
     </head>
     <body>
         <div class="d-flex" id="wrapper">
@@ -23,7 +27,6 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="alunos_novos.html">Cadastrar Alunos</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="./confirmar_matriculas.html">Confirmar Matriculas</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="./transferencias.html">Transferência</a>
-
                 </div>
 				<div class="ultimo-saida"><a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">&harr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sair</a></div>
             </div>
@@ -47,64 +50,26 @@
                 <div class="container">
                     
                     <div class="block1">
-                        <p>Secretaria</p>
+                        <p>Transferir aluno</p>
                     </div>
                     <hr>
                     <div class="block2">
+                        <form action="./transferencia.html" method="get">
+                            <div class="data">
+                                <div class="personal_data">
+                                    <h3>Dados Pessoais</h3>
+                                    <hr>
 
-                        <div class="blockCard">
-                            <div class="cards">
-                                <img src="../">
-                                <span><p>Pagamentos</p></span>
-                                <p>Registrar pagamentos.</p>
-                                <a href="./pagamentos.html">Saber mais...</a>
+                                    <label for="nome_aluno">Nome do aluno<span>*</span></label>
+                                    <input type="search"  id="nome" name="nome" placeholder="Ex: Aragão Victor"/>
+                                </div>
                             </div>
-
-                            <div class="cards">
-                                <img src="../">
-                                <span><p>Emissão de boletins</p></span>
-                                <p>Emissão de documentos.</p>
-                                <a href="#">Saber mais...</a>
-                            </div>
-
-                            <div class="cards">
-                                <img src="../">
-                                <span><p>Cursos</p></span>
-                                <p>Todos os cursos.</p>
-                                <a href="#">Saber mais...</a>
-                            </div>
-
-                        </div>
-
-                        <div class="blockNumbers">
-                            <div class="chart">
-                                <h1>12</h1>
-                                <p>Números de sala</p>
-                            </div>
+                            <hr>
                             
-                            <div class="doubleChart">
-                                <div>
-                                    <span><p>527+</p></span>
-                                    <p>Alunos</p>
-                                </div>
-                                <div>
-                                    <span><p>55+</p></span>
-                                    <p>Diplomas emitidos</p>
-                                </div>
+                            <div class="button">
+                                <button type="submit" class="btnReg">Pesquisar Processo</button>
                             </div>
-
-                            <div class="doubleChart">
-                                <div>
-                                    <span><p>227+</p></span>
-                                    <p>Pagamentos processados</p>
-                                </div>
-                                <div>
-                                    <span><p>668+</p></span>
-                                    <p>Documentos entregues</p>
-                                </div>
-                            </div>
-                        </div>
-
+                        </form>
                     </div>
                 </div>
               <hr>
